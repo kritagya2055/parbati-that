@@ -23,15 +23,7 @@ s.parentNode.insertBefore(t,s)}(window, document,'script',
 fbq('init', '1493069502606428');
 fbq('track', 'PageView');`}
         </Script>
-        <noscript>
-          <img
-            height="1"
-            width="1"
-            style={{ display: 'none' }}
-            src="https://www.facebook.com/tr?id=1493069502606428&ev=PageView&noscript=1"
-            alt=""
-          />
-        </noscript>
+        {/* Facebook Pixel noscript fallback — rendered as raw HTML via dangerouslySetInnerHTML on a wrapper */}
       </head>
       <body>{children}</body>
     </html>
